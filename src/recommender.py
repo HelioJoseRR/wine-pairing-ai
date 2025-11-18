@@ -1,29 +1,63 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from typing import Dict, Optional
 import google.generativeai as genai
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+try:
+    from .config import GEMINI_API_KEY, GEMINI_MODEL, REQUIRED_CSV_COLUMNS
+    from .logger import setup_logger
+except ImportError:
+    from config import GEMINI_API_KEY, GEMINI_MODEL, REQUIRED_CSV_COLUMNS
+    from logger import setup_logger
+
+logger = setup_logger(__name__)
 
 class WineRecommender:
     def __init__(self, csv_path: str):
-        self.df = pd.read_csv(csv_path)
+        logger.info(f"Inicializando Wine Recommender com CSV: {csv_path}")
+        
+        if not Path(csv_path).exists():
+            logger.error(f"Arquivo de vinhos não encontrado: {csv_path}")
+            raise FileNotFoundError(f"Arquivo de vinhos não encontrado: {csv_path}")
+        
+        try:
+            self.df = pd.read_csv(csv_path, encoding='utf-8')
+            logger.info(f"CSV carregado com {len(self.df)} vinhos")
+        except Exception as e:
+            logger.error(f"Erro ao carregar arquivo CSV: {e}")
+            raise ValueError(f"Erro ao carregar arquivo CSV: {e}")
+        
+        # Validar colunas necessárias
+        self._validate_csv_columns()
         
         # Configurar Gemini para justificativas detalhadas
-        api_key = os.getenv("GEMINI_API_KEY")
-        if api_key:
-            genai.configure(api_key=api_key)
-            self.model = genai.GenerativeModel('gemini-2.0-flash')
+        if GEMINI_API_KEY:
+            genai.configure(api_key=GEMINI_API_KEY)
+            self.model = genai.GenerativeModel(GEMINI_MODEL)
             self.use_llm_justification = True
+            logger.info("LLM habilitado para justificativas")
         else:
             self.use_llm_justification = False
+            logger.warning("LLM não configurado - usando justificativas simples")
     
-    def recommend(self, dish_params: dict, perfil_fuzzy: dict) -> dict:
+    def _validate_csv_columns(self) -> None:
+        """Valida que todas as colunas necessárias existem no CSV"""
+        missing_columns = [col for col in REQUIRED_CSV_COLUMNS if col not in self.df.columns]
+        
+        if missing_columns:
+            error_msg = f"Colunas ausentes no CSV: {', '.join(missing_columns)}"
+            logger.error(error_msg)
+            raise ValueError(error_msg)
+        
+        logger.info("Todas as colunas necessárias foram encontradas no CSV")
+    
+    def recommend(self, dish_params: Dict[str, float], perfil_fuzzy: Dict[str, any]) -> Dict[str, any]:
         """
         Recomenda um vinho baseado nos parâmetros do prato e perfil fuzzy.
         """
+        logger.info(f"Buscando vinho com perfil {perfil_fuzzy['categoria']}")
+        
         categoria = perfil_fuzzy['categoria']
         
         # Mapear categoria fuzzy para faixa de corpo do vinho
@@ -38,37 +72,38 @@ class WineRecommender:
         candidatos = self.df[
             (self.df['corpo'] >= corpo_min) & 
             (self.df['corpo'] <= corpo_max)
-        ]
+        ].copy()
         
         if len(candidatos) == 0:
-            candidatos = self.df
+            logger.warning("Nenhum candidato encontrado na faixa de corpo - usando todos os vinhos")
+            candidatos = self.df.copy()
         
-        # Calcular distância entre atributos do prato e do vinho
-        # Parâmetros relevantes: acidez, intensidade_sabor
-        melhores_scores = []
+        logger.info(f"{len(candidatos)} vinhos candidatos encontrados")
         
-        for idx, wine in candidatos.iterrows():
-            # Distância euclidiana simplificada
-            dist_acidez = abs(wine['acidez'] - dish_params['acidez'])
-            dist_intensidade = abs(wine['intensidade_sabor'] - dish_params['intensidade_sabor'])
-            
-            # Fator de dulçor: pratos mais doces combinam com vinhos mais doces
-            dist_dulcor = abs(wine['doçura'] - dish_params['dulcor'])
-            
-            # Score total (menor é melhor)
-            score = dist_acidez + dist_intensidade + dist_dulcor * 0.5
-            
-            melhores_scores.append({
-                'idx': idx,
-                'score': score,
-                'wine': wine
-            })
+        # Calcular distâncias usando operações vetorizadas (muito mais rápido)
+        candidatos = candidatos.dropna(subset=['acidez', 'intensidade_sabor', 'doçura'])
         
-        # Ordenar por menor score
-        melhores_scores.sort(key=lambda x: x['score'])
+        if len(candidatos) == 0:
+            logger.error("Nenhum vinho válido após remover valores nulos")
+            raise ValueError("Nenhum vinho válido encontrado na base de dados")
         
-        # Pegar o melhor vinho
-        melhor = melhores_scores[0]['wine']
+        # Operações vetorizadas do pandas (100x mais rápido que iterrows)
+        candidatos['dist_acidez'] = np.abs(candidatos['acidez'] - dish_params['acidez'])
+        candidatos['dist_intensidade'] = np.abs(candidatos['intensidade_sabor'] - dish_params['intensidade_sabor'])
+        candidatos['dist_dulcor'] = np.abs(candidatos['doçura'] - dish_params['dulcor'])
+        
+        # Score total (menor é melhor)
+        candidatos['score'] = (
+            candidatos['dist_acidez'] + 
+            candidatos['dist_intensidade'] + 
+            candidatos['dist_dulcor'] * 0.5
+        )
+        
+        # Ordenar por score e pegar o melhor
+        candidatos = candidatos.sort_values('score')
+        melhor = candidatos.iloc[0]
+        
+        logger.info(f"Melhor vinho selecionado: {melhor['nome']} (score: {melhor['score']:.2f})")
         
         # Justificativa com LLM (se disponível) ou fallback
         if self.use_llm_justification:
@@ -91,7 +126,7 @@ class WineRecommender:
             'justificativa': justificativa
         }
     
-    def _generate_justification(self, wine, dish_params, perfil_fuzzy) -> str:
+    def _generate_justification(self, wine, dish_params: Dict[str, float], perfil_fuzzy: Dict[str, any]) -> str:
         """
         Gera uma justificativa textual para a recomendação.
         """
@@ -120,7 +155,7 @@ class WineRecommender:
         
         return justificativa.strip()
     
-    def _generate_llm_justification(self, wine, dish_params, perfil_fuzzy) -> str:
+    def _generate_llm_justification(self, wine, dish_params: Dict[str, float], perfil_fuzzy: Dict[str, any]) -> str:
         """
         Gera uma justificativa detalhada usando o Gemini, incluindo fatos interessantes.
         """
@@ -164,7 +199,13 @@ NÃO use markdown, asteriscos ou formatação especial.
         
         try:
             response = self.model.generate_content(prompt)
+            
+            if not response or not hasattr(response, 'text'):
+                logger.warning("Resposta inválida da LLM - usando justificativa básica")
+                return self._generate_justification(wine, dish_params, perfil_fuzzy)
+            
+            logger.info("Justificativa LLM gerada com sucesso")
             return response.text.strip()
         except Exception as e:
-            # Fallback para justificativa simples se a API falhar
+            logger.warning(f"Erro ao gerar justificativa com LLM: {str(e)} - usando justificativa básica")
             return self._generate_justification(wine, dish_params, perfil_fuzzy)
