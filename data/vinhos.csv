@@ -1,0 +1,137 @@
+nome,uva,tipo,país,região,teor_alcoolico,acidez,corpo,doçura,intensidade_sabor,harmonizacoes
+Château Margaux 2015,Cabernet Sauvignon,tinto,França,Bordeaux,13.5,6,9,1,9,carne vermelha;cordeiro;queijos duros
+Barolo Riserva DOCG,Nebbiolo,tinto,Itália,Piemonte,14.5,8,10,0,10,trufas;carne de caça;risoto
+Opus One 2018,Cabernet Sauvignon,tinto,Estados Unidos,Napa Valley,14.0,6,9,1,9,bife;costela;queijos maturados
+Vega Sicilia Único,Tempranillo,tinto,Espanha,Ribera del Duero,14.0,7,9,1,9,cordeiro;javali;queijos curados
+Penfolds Grange,Shiraz,tinto,Austrália,South Australia,14.5,6,10,1,10,carne grelhada;ensopados;chocolate amargo
+Screaming Eagle Cabernet,Cabernet Sauvignon,tinto,Estados Unidos,Napa Valley,14.5,6,9,1,9,filet mignon;costela;foie gras
+Sassicaia 2016,Cabernet Sauvignon,tinto,Itália,Toscana,13.5,7,9,1,9,bisteca;javali;pecorino
+Châteauneuf-du-Pape,Grenache,tinto,França,Rhône,14.5,6,9,1,9,cordeiro;cassoulet;queijos franceses
+Amarone della Valpolicella,Corvina,tinto,Itália,Veneto,15.5,6,10,3,10,ossobuco;gorgonzola;chocolate
+Rioja Gran Reserva,Tempranillo,tinto,Espanha,Rioja,13.5,7,8,1,8,paella;chorizo;manchego
+Pomerol Château Pétrus,Merlot,tinto,França,Bordeaux,13.5,6,9,1,9,pato;cogumelos;trufas
+Brunello di Montalcino,Sangiovese,tinto,Itália,Toscana,14.0,8,9,0,9,javali;bisteca;pecorino
+Priorat DOQ,Garnacha,tinto,Espanha,Catalunha,15.0,7,10,1,10,cordeiro;morcilla;queijos intensos
+Hermitage,Syrah,tinto,França,Rhône,13.5,7,9,1,9,carne de caça;pato;queijos azuis
+Tignanello,Sangiovese,tinto,Itália,Toscana,13.5,7,9,1,9,massa com ragu;vitela;parmesão
+Pingus,Tempranillo,tinto,Espanha,Ribera del Duero,15.0,7,10,1,10,cordeiro assado;javali;queijos curados
+Château Lafite Rothschild,Cabernet Sauvignon,tinto,França,Bordeaux,12.5,6,9,1,9,cordeiro;perdiz;brie
+Ornellaia,Cabernet Sauvignon,tinto,Itália,Toscana,14.0,7,9,1,9,ossobuco;bisteca;trufas
+Ridge Monte Bello,Cabernet Sauvignon,tinto,Estados Unidos,Santa Cruz,13.5,7,9,1,9,carne grelhada;cogumelos;cheddar envelhecido
+Valpolicella Ripasso,Corvina,tinto,Itália,Veneto,13.5,6,8,2,8,lasanha;salsichas;provolone
+Malbec Catena Zapata,Malbec,tinto,Argentina,Mendoza,14.5,6,9,1,9,churrasco;empanadas;queijo azul
+Carménère Reserva,Carménère,tinto,Chile,Vale Central,14.0,6,8,1,8,carne assada;feijoada;queijos defumados
+Chianti Classico Riserva,Sangiovese,tinto,Itália,Toscana,13.5,8,7,0,8,pizza;pasta bolonhesa;pecorino
+Côtes du Rhône Villages,Grenache,tinto,França,Rhône,13.5,6,7,1,7,ratatouille;grelhados;brie
+Zinfandel Primitivo,Zinfandel,tinto,Estados Unidos,Califórnia,15.0,5,9,2,9,costela barbecue;hambúrguer;cheddar
+Douro Reserva,Touriga Nacional,tinto,Portugal,Douro,14.0,7,9,1,9,bacalhau;cozido;queijo da serra
+Pinotage Reserve,Pinotage,tinto,África do Sul,Stellenbosch,14.5,6,8,1,8,bobotie;carne grelhada;gouda defumado
+Nero d'Avola,Nero d'Avola,tinto,Itália,Sicília,13.5,6,8,1,8,caponata;cordeiro;pecorino siciliano
+Tannat Reserva,Tannat,tinto,Uruguai,Canelones,14.0,7,9,0,9,asado;chorizo;queijos duros
+Petite Sirah,Petite Sirah,tinto,Estados Unidos,Califórnia,14.5,6,9,1,9,churrasco;costela;blue cheese
+Cabernet Franc Loire,Cabernet Franc,tinto,França,Loire,12.5,8,6,0,7,salmão grelhado;lentilhas;chèvre
+GSM Blend Barossa,Grenache,tinto,Austrália,Barossa Valley,14.5,6,9,2,9,canguru;cordeiro;queijos australianos
+Aglianico del Vulture,Aglianico,tinto,Itália,Basilicata,13.5,8,9,0,9,porchetta;ragu;caciocavallo
+Xinomavro Naoussa,Xinomavro,tinto,Grécia,Naoussa,13.0,8,8,0,8,moussaka;cordeiro;feta
+Mencía Bierzo,Mencía,tinto,Espanha,Bierzo,13.5,7,7,0,7,polvo;embutidos;tetilla
+Blaufränkisch,Blaufränkisch,tinto,Áustria,Burgenland,13.0,8,7,0,7,schnitzel;gulash;queijos alpinos
+Zweigelt,Zweigelt,tinto,Áustria,Niederösterreich,12.5,7,6,0,6,salsichas;porco;emmental
+Barbera d'Asti,Barbera,tinto,Itália,Piemonte,13.5,9,7,0,8,risoto;vitela;fontina
+Dolcetto d'Alba,Dolcetto,tinto,Itália,Piemonte,12.5,7,6,0,6,pizza;antipasto;mozzarella
+Valpolicella Classico,Corvina,tinto,Itália,Veneto,12.0,7,5,1,6,pasta pomodoro;frango;asiago
+Chablis Grand Cru,Chardonnay,branco,França,Borgonha,13.0,9,7,0,8,ostras;lagosta;comté
+Puligny-Montrachet,Chardonnay,branco,França,Borgonha,13.5,8,8,1,9,frango com creme;vieiras;brie
+Meursault,Chardonnay,branco,França,Borgonha,13.5,7,8,2,8,salmão grelhado;frango assado;gruyère
+Chardonnay Sonoma,Chardonnay,branco,Estados Unidos,Sonoma,14.0,6,8,2,8,lagosta;frango;brie
+Chardonnay Reserva Chile,Chardonnay,branco,Chile,Casablanca Valley,13.5,7,7,1,7,pescado grelhado;frango;queijos cremosos
+Pouilly-Fuissé,Chardonnay,branco,França,Borgonha,13.0,8,7,1,7,escargot;frango;camembert
+Riesling Kabinett,Riesling,branco,Alemanha,Mosel,8.5,9,3,7,6,comida tailandesa;frango agridoce;queijos azuis
+Riesling Spätlese,Riesling,branco,Alemanha,Rheingau,9.0,9,4,8,7,pato;comida chinesa;roquefort
+Riesling Alsace Grand Cru,Riesling,branco,França,Alsácia,13.0,9,6,3,8,choucroute;foie gras;munster
+Grüner Veltliner,Grüner Veltliner,branco,Áustria,Wachau,12.5,8,5,1,6,schnitzel;aspargos;queijos leves
+Albariño Rías Baixas,Albariño,branco,Espanha,Galícia,12.5,9,5,1,7,frutos do mar;polvo;queijo tetilla
+Verdejo Rueda,Verdejo,branco,Espanha,Rueda,13.0,8,5,1,6,tapas;camarão;manchego jovem
+Sauvignon Blanc Sancerre,Sauvignon Blanc,branco,França,Loire,12.5,9,4,0,7,queijo de cabra;ostras;saladas
+Sauvignon Blanc Marlborough,Sauvignon Blanc,branco,Nova Zelândia,Marlborough,13.0,9,5,0,8,sushi;frutos do mar;feta
+Sauvignon Blanc Napa,Sauvignon Blanc,branco,Estados Unidos,Napa Valley,13.5,8,5,1,7,saladas;peixe grelhado;queijo de cabra
+Chenin Blanc Vouvray,Chenin Blanc,branco,França,Loire,12.0,9,5,5,7,comida tailandesa;porco;camembert
+Viognier Condrieu,Viognier,branco,França,Rhône,13.5,6,7,2,8,frango curry;vieiras;brie
+Pinot Grigio Alto Adige,Pinot Grigio,branco,Itália,Alto Adige,12.5,8,4,1,5,risoto;peixe;mozzarella
+Pinot Gris Alsace,Pinot Gris,branco,França,Alsácia,13.5,7,6,3,7,foie gras;salmão defumado;munster
+Vermentino di Sardegna,Vermentino,branco,Itália,Sardenha,12.5,8,5,1,6,frutos do mar;peixe grelhado;pecorino sardo
+Fiano di Avellino,Fiano,branco,Itália,Campânia,13.0,8,6,1,7,frutos do mar;frango;mozzarella di bufala
+Falanghina,Falanghina,branco,Itália,Campânia,12.5,8,5,1,6,pizza margherita;camarão;ricotta
+Gavi DOCG,Cortese,branco,Itália,Piemonte,12.0,9,4,0,6,peixe cru;saladas;queijos frescos
+Soave Classico,Garganega,branco,Itália,Veneto,12.0,8,4,1,5,risoto;frutos do mar;asiago
+Vinho Verde,Alvarinho,branco,Portugal,Minho,11.0,9,3,1,5,sardinhas;bacalhau;queijos frescos
+Assyrtiko Santorini,Assyrtiko,branco,Grécia,Santorini,13.5,9,6,0,8,polvo grelhado;frutos do mar;feta
+Txakoli,Hondarribi Zuri,branco,Espanha,País Basco,11.0,9,3,0,5,pintxos;frutos do mar;idiazabal
+Godello Valdeorras,Godello,branco,Espanha,Galícia,13.0,8,6,1,7,polvo;empanadas;queijos galegos
+Torrontés Salta,Torrontés,branco,Argentina,Salta,13.0,8,5,2,7,comida picante;ceviche;queijos suaves
+Gewürztraminer Alsace,Gewürztraminer,branco,França,Alsácia,13.5,6,6,4,8,comida asiática;foie gras;munster
+Müller-Thurgau,Müller-Thurgau,branco,Alemanha,Baden,11.5,7,3,3,5,saladas;peixe;queijos leves
+Silvaner Franken,Silvaner,branco,Alemanha,Francônia,12.0,7,4,1,5,schäufele;aspargos;queijos alemães
+Champagne Brut,Chardonnay,espumante,França,Champagne,12.0,9,6,1,7,ostras;caviar;brie
+Champagne Blanc de Blancs,Chardonnay,espumante,França,Champagne,12.0,9,6,0,8,sushi;frutos do mar;queijos leves
+Champagne Rosé,Pinot Noir,espumante,França,Champagne,12.0,8,6,2,7,salmão;frutos vermelhos;queijos cremosos
+Prosecco Superiore DOCG,Glera,espumante,Itália,Valdobbiadene,11.0,8,4,3,5,aperitivos;frutos do mar;mozzarella
+Franciacorta Brut,Chardonnay,espumante,Itália,Lombardia,12.5,9,6,1,7,risoto;peixe;grana padano
+Cava Reserva,Macabeo,espumante,Espanha,Catalunha,11.5,8,5,1,6,tapas;paella;manchego
+Crémant d'Alsace,Pinot Blanc,espumante,França,Alsácia,12.0,8,5,2,6,tarte flambée;charcutaria;munster
+Sekt Riesling,Riesling,branco,Alemanha,Rheingau,11.5,9,4,3,6,aperitivos;saladas;queijos leves
+Asti Spumante,Moscato,espumante,Itália,Piemonte,7.0,7,3,8,5,panettone;frutas;queijos azuis
+Lambrusco di Modena,Lambrusco,espumante,Itália,Emilia-Romagna,11.0,8,4,3,6,mortadela;lasanha;parmesão
+Pinot Noir Bourgogne,Pinot Noir,tinto,França,Borgonha,13.0,8,6,0,7,salmão;pato;brie
+Pinot Noir Willamette,Pinot Noir,tinto,Estados Unidos,Oregon,13.5,8,6,0,8,cogumelos;salmão;gruyère
+Pinot Noir Central Otago,Pinot Noir,tinto,Nova Zelândia,Central Otago,13.5,8,7,0,8,cordeiro;pato;queijos suaves
+Pinot Noir Sonoma,Pinot Noir,tinto,Estados Unidos,Sonoma,13.5,7,6,0,7,frango;cogumelos;brie
+Beaujolais Cru,Gamay,tinto,França,Beaujolais,13.0,8,5,0,6,charcutaria;frango;comté
+Côtes du Rhône,Grenache,tinto,França,Rhône,13.0,6,6,1,6,ratatouille;cordeiro;chèvre
+Rosé de Provence,Grenache,rosé,França,Provence,12.5,8,3,2,5,saladas;frutos do mar;queijos frescos
+Rosé d'Anjou,Cabernet Franc,rosé,França,Loire,11.0,7,3,4,4,aperitivos;saladas;chèvre
+Tavel Rosé,Grenache,rosé,França,Rhône,13.5,7,5,1,6,bouillabaisse;grelhados;feta
+Bandol Rosé,Mourvèdre,rosé,França,Provence,13.0,8,5,1,7,ratatouille;frutos do mar;queijos provençais
+White Zinfandel,Zinfandel,rosé,Estados Unidos,Califórnia,10.0,6,2,6,3,aperitivos;saladas;queijos leves
+Cerasuolo d'Abruzzo,Montepulciano,rosé,Itália,Abruzzo,12.5,7,4,2,6,arrosticini;frutos do mar;pecorino
+Rosato di Toscana,Sangiovese,rosé,Itália,Toscana,12.5,8,4,1,6,bruschetta;peixe;pecorino
+Navarra Rosado,Garnacha,rosé,Espanha,Navarra,13.0,7,4,2,6,tapas;paella;manchego
+Porto Vintage,Touriga Nacional,tinto,Portugal,Douro,20.0,6,10,8,10,queijos azuis;chocolate;nozes
+Porto Tawny 20 anos,Touriga Nacional,tinto,Portugal,Douro,20.0,6,9,7,9,sobremesas;queijos duros;amêndoas
+Madeira Malmsey,Malvasia,branco,Portugal,Madeira,19.0,8,8,9,9,sobremesas;queijos azuis;nozes
+Sauternes,Sémillon,branco,França,Bordeaux,13.5,7,8,10,9,foie gras;roquefort;sobremesas
+Tokaji Aszú 5 Puttonyos,Furmint,branco,Hungria,Tokaj,11.0,9,6,9,8,foie gras;queijos azuis;sobremesas
+Eiswein,Riesling,branco,Alemanha,Rheingau,8.0,9,4,10,8,sobremesas;queijos azuis;frutas
+Vin Santo,Trebbiano,branco,Itália,Toscana,16.0,7,7,9,8,biscotti;queijos azuis;sobremesas
+Montepulciano d'Abruzzo,Montepulciano,tinto,Itália,Abruzzo,13.0,7,7,0,7,pizza;pasta;pecorino
+Primitivo di Manduria,Primitivo,tinto,Itália,Puglia,14.5,6,9,2,9,carne grelhada;massas ricas;queijos duros
+Nero d'Avola Sicilia,Nero d'Avola,tinto,Itália,Sicília,13.5,7,8,1,8,arancini;cordeiro;pecorino siciliano
+Cannonau di Sardegna,Grenache,tinto,Itália,Sardenha,14.0,6,8,1,8,porco assado;cordeiro;pecorino sardo
+Sagrantino di Montefalco,Sagrantino,tinto,Itália,Umbria,14.5,8,10,0,10,javali;carne de caça;queijos curados
+Taurasi DOCG,Aglianico,tinto,Itália,Campânia,13.5,8,9,0,9,ragu napolitano;carne;caciocavallo
+Teroldego Rotaliano,Teroldego,tinto,Itália,Trentino,12.5,7,7,0,7,speck;carne;asiago
+Lagrein Dunkel,Lagrein,tinto,Itália,Alto Adige,13.0,7,7,0,7,canederli;veado;queijos alpinos
+Corvina Veronese,Corvina,tinto,Itália,Veneto,12.5,7,6,1,6,risoto;frango;monte veronese
+Frappato di Vittoria,Frappato,tinto,Itália,Sicília,12.0,8,5,0,6,peixe-espada;tomate;ragusano
+Dão Reserva,Touriga Nacional,tinto,Portugal,Dão,13.5,7,8,0,8,cabrito;arroz de pato;queijo da serra
+Alentejo Reserva,Aragonez,tinto,Portugal,Alentejo,14.0,6,8,1,8,porco preto;migas;queijos alentejanos
+Bairrada Reserva,Baga,tinto,Portugal,Bairrada,13.0,8,7,0,7,leitão;chanfana;queijo rabaçal
+Touriga Nacional,Touriga Nacional,tinto,Portugal,Douro,14.0,7,9,0,9,carne vermelha;queijos curados;enchidos
+Tinta Roriz,Tempranillo,tinto,Portugal,Douro,13.5,7,8,0,8,arroz de cabidela;cozido;queijo serra da estrela
+Encruzado Dão,Encruzado,branco,Portugal,Dão,13.0,8,6,1,7,bacalhau;polvo;queijo da serra
+Arinto Bucelas,Arinto,branco,Portugal,Bucelas,12.5,9,5,0,6,marisco;peixe grelhado;queijo fresco
+Fernão Pires,Fernão Pires,branco,Portugal,Tejo,12.0,7,4,2,6,cataplana;açorda;queijos suaves
+Carmenère Gran Reserva,Carménère,tinto,Chile,Colchagua Valley,14.5,6,8,1,8,cordeiro;empanadas;queijo curado
+Syrah Limarí,Syrah,tinto,Chile,Limarí Valley,14.0,7,8,0,8,carne;cordeiro;queijos defumados
+Pinot Noir Casablanca,Pinot Noir,tinto,Chile,Casablanca Valley,13.0,8,6,0,7,pato;cogumelos;queijos suaves
+Cabernet Sauvignon Maipo,Cabernet Sauvignon,tinto,Chile,Maipo Valley,13.5,6,8,0,8,asado;chorizo;queijos chilenos
+Malbec Luján de Cuyo,Malbec,tinto,Argentina,Luján de Cuyo,14.5,6,9,0,9,asado;empanadas;queijos argentinos
+Bonarda Argentina,Bonarda,tinto,Argentina,Mendoza,13.5,6,7,1,7,pizza;pasta;provolone
+Torrontés Cafayate,Torrontés,branco,Argentina,Cafayate,13.5,8,5,2,7,empanadas;ceviche;queijos suaves
+Cabernet Franc Mendoza,Cabernet Franc,tinto,Argentina,Mendoza,13.5,7,7,0,7,cordeiro;vegetais grelhados;queijos duros
+Tannat Cafayate,Tannat,tinto,Argentina,Salta,14.5,7,9,0,9,churrasco;morcilla;queijos intensos
+Pinotage Western Cape,Pinotage,tinto,África do Sul,Western Cape,14.0,6,8,1,8,bobotie;churrasco;gouda
+Chenin Blanc Stellenbosch,Chenin Blanc,branco,África do Sul,Stellenbosch,13.0,8,5,2,6,frutos do mar;frango;queijos suaves
+Shiraz McLaren Vale,Shiraz,tinto,Austrália,McLaren Vale,14.5,6,9,1,9,carne;canguru;cheddar envelhecido
+Cabernet Sauvignon Coonawarra,Cabernet Sauvignon,tinto,Austrália,Coonawarra,14.0,6,9,0,9,cordeiro;bife;queijos duros
+Chardonnay Margaret River,Chardonnay,branco,Austrália,Margaret River,13.5,7,7,1,7,lagosta;frango;brie
+Semillon Hunter Valley,Sémillon,branco,Austrália,Hunter Valley,11.0,9,5,0,7,ostras;peixe;queijos leves
