@@ -50,8 +50,13 @@ desktop.ini
 *.log
 logs/
 
+# Cache
+.cache/
+*.cache
+
 # Data files
 data/*.csv
+!data/vinhos.csv
 data/*.json
 data/*.xlsx
 !data/.gitkeep
