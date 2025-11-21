@@ -22,6 +22,7 @@ Sistema avançado de recomendação de vinhos que combina **Lógica Fuzzy com Ma
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 
 ## 🎯 Visão Geral
+**Vídeo de apresentação**: Pode ser acessado neste link: https://drive.google.com/file/d/1Sl0i5KemuOlRi28xWjFaoZeN_qqucx1e/view
 
 Este sistema utiliza cinco componentes principais:
 
