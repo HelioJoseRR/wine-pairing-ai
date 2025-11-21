@@ -3,6 +3,7 @@
 Sistema avançado de recomendação de vinhos que combina **Lógica Fuzzy com Machine Learning**, **Árvore de Decisão** e **Inteligência Artificial (LLM)** para sugerir o vinho perfeito para qualquer prato.
 
 ##**Vídeo de apresentação**: Pode ser acessado neste link:
+
 ###https://drive.google.com/file/d/1Sl0i5KemuOlRi28xWjFaoZeN_qqucx1e/view
 🆕 **NOVIDADES DA VERSÃO 2.0:**
 - 🌳 **Árvore de Decisão Fuzzy** gerada automaticamente a partir de 98+ pratos conhecidos
